@@ -1,7 +1,9 @@
 const fs= require('fs');
 const path = require('path');
 
-const folderPath = path.join(__dirname, 'public', 'images');
+const folderPath = path.join('D:', 'murugaA03s', 'DCIM', 'Screenshots');
+console.log(folderPath);
+
 
 fs.readdir(folderPath, (err, files) => {
     if (err) {
@@ -12,7 +14,11 @@ fs.readdir(folderPath, (err, files) => {
     const fileCount = files.filter(file => {
         const fullPath = path.join(folderPath, file);
         return fs.lstatSync(fullPath).isFile();
-    }).length;
+    });
 
-    console.log(`Number of Files : ${fileCount}`);
+    // console.log(`Number of Files : ${(fileCount.length)}`);
+    files.forEach(item => {
+        console.log(item);        
+    });
+    
 })
