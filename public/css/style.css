@@ -1,0 +1,26 @@
+nav {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(181, 207, 199, 0.557);
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.index-h1 {
+    margin: 15%;
+}
