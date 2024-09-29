@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+
+<h1>Your Famous Quotes from *Shawshank Redemption*</h1>
+
+<% arr.forEach((item) => { %> 
+    <h1><%= item.content %></h1> 
+<% }) %>
+
+<%- include('partials/footer') %>
